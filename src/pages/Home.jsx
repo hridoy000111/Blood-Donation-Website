@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import { DonorContext } from "../context/DonorContext";
+import { RequestContext } from "../context/RequestContext";
 import heroImage from "../assets/images/blood-hero-page.png";
 
 const Home = () => {
+  const { donors } = useContext(DonorContext);
+  const { requests } = useContext(RequestContext);
   return (
     <div className="bg-gray-200 min-h-screen py-10 px-4">
       {/* Hero Section */}
@@ -55,11 +59,13 @@ const Home = () => {
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Our Impact</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded shadow">
-            <h3 className="text-3xl font-bold text-red-600">1000+</h3>
+            <h3 className="text-3xl font-bold text-red-600">{donors.length}</h3>
             <p className="text-gray-700">Donors Registered</p>
           </div>
           <div className="bg-white p-6 rounded shadow">
-            <h3 className="text-3xl font-bold text-red-600">500+</h3>
+            <h3 className="text-3xl font-bold text-red-600">
+              {requests.length}
+            </h3>
             <p className="text-gray-700">Requests Fulfilled</p>
           </div>
           <div className="bg-white p-6 rounded shadow">
