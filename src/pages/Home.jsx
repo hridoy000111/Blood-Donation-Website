@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import { DonorContext } from "../context/DonorContext";
-import { RequestContext } from "../context/RequestContext";
+
 import heroImage from "../assets/images/blood-hero-page.png";
+import { DonorContext } from "../Context/DonorContext";
+import { RequestContext } from "../Context/RequestContext";
 
 const Home = () => {
   const { donors } = useContext(DonorContext);
