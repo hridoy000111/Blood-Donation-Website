@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 import heroImage from "../assets/images/blood-hero-page.png";
-import { DonorContext } from "../Context/DonorContext";
-import { RequestContext } from "../Context/RequestContext";
+import { DonorContext } from "../Context/DonorContext.jsx";
+import { RequestContext } from "../Context/RequestContext.jsx";
 
 const Home = () => {
   const { donors } = useContext(DonorContext);
