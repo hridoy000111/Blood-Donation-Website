@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { DonorContext } from "../Context/DonorContext.jsx";
+import { useContext } from "react";
+import { DonorContext } from "../Context/DonorContext";
 
 const Donors = () => {
   const { donors, markAsDonated } = useContext(DonorContext);

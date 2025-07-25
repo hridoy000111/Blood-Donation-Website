@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RequestContext } from "../Context/RequestContext.jsx";
+import { RequestContext } from "../Context/RequestContext";
 
 const BloodRequestForm = () => {
   const { addRequest } = useContext(RequestContext);

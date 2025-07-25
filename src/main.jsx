@@ -2,16 +2,16 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./Layout.jsx";
-import Home from "./pages/Home.jsx";
 
-import { DonorProvider } from "./Context/DonorContext.jsx";
+import Home from "./pages/Home.jsx";
+import Layout from "./Layout.jsx";
 
 import DonorForm from "./pages/DonorForm.jsx";
 import Donors from "./pages/Donors.jsx";
 import BloodRequestForm from "./pages/BloodRequestForm.jsx";
 import RequestList from "./pages/RequestList.jsx";
-import { RequestProvider } from "./Context/RequestContext.jsx";
+import DonorProvider from "./provider/DonorProvider.jsx";
+import RequestProvider from "./provider/RequestProvider.jsx";
 
 const router = createBrowserRouter([
   {

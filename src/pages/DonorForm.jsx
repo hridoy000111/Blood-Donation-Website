@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import { useNavigate } from "react-router-dom";
-import { DonorContext } from "../Context/DonorContext.jsx";
+import { DonorContext } from "../Context/DonorContext";
 
 const DonorForm = () => {
   const { addDonor } = useContext(DonorContext);

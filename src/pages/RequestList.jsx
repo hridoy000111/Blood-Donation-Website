@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { RequestContext } from "../Context/RequestContext.jsx";
+import { RequestContext } from "../Context/RequestContext";
 
 const RequestList = () => {
   const { requests, markAsCollected } = useContext(RequestContext);
